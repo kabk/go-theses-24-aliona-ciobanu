@@ -112,6 +112,10 @@ nav > div > .cont > article {
 .active > .cont > article {
   filter: blur(0px);
 }
+
+.second > .cont {
+  bottom: -1rem;
+}
 .intro {
 }
 
@@ -176,7 +180,7 @@ main.part1-container {
   /* your 'mobile' overriding css properties here */
 
   * {
-    color: rgb(255, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
     width: 100%;
   }
 
