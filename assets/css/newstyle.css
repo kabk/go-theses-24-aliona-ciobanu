@@ -95,7 +95,7 @@ nav > div > .cont {
   max-height: 50vh;
   transition: max-height ease 0.3s;
   overflow: hidden;
-  box-shadow: inset 0 0 10px #fff;
+  box-shadow: inset 0 0 10px #ffffff;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /*Firefox*/
 }
@@ -106,7 +106,7 @@ nav > .active > .cont {
 }
 
 nav > div > .cont > article {
-  filter: blur(10px);
+  filter: blur(14px);
 }
 
 .active > .cont > article {
