@@ -27,7 +27,7 @@
   --font-weight: bold;
   --font-size: 1rem;
   /* Margin value */
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   padding-right: 1rem;
 }
 
@@ -56,13 +56,9 @@ body {
   z-index: 0;
 }
 
-ol {
-  font-size: 0.75rem;
-  margin-left: 1.2rem;
-  list-style: decimal;
-}
 figcaption {
-  font-size: 0.55rem;
+  font-size: 0.75rem;
+  margin-left: 6rem;
 }
 nav {
   width: 100vw;
@@ -91,6 +87,11 @@ nav > div {
   position: absolute;
 }
 
+.active > .cont > h2 {
+  height: 1.25rem;
+  background-color: #ffffff;
+}
+
 nav > div > .cont {
   max-height: 50vh;
   transition: max-height ease 0.3s;
@@ -116,78 +117,127 @@ nav > div > .cont > article {
 .second > .cont {
   bottom: -1rem;
 }
+
+ol {
+  font-size: 0.75rem;
+  margin-left: 1.2rem;
+  /* margin-left: 6rem; */
+  list-style: decimal;
+}
+li {
+  padding-left: 8rem;
+}
+h2 {
+  margin-left: 6rem;
+  /* text-indent: 6rem; */
+}
 .intro {
 }
+
 p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-figure {
-  margin-bottom: 0.5rem;
+figcaption {
+  margin-bottom: 0.75rem;
+  margin-left: 0;
 }
 
-/* .conclusion {
-  grid-column: span 1/-1;
-  grid-column: 2 / -1;
-} */
+.footnote {
+  font-size: 0.75rem;
+}
 
-main.part1-container {
+main.part0-container {
   position: relative;
   display: block;
   float: left;
   width: 100%;
   height: auto;
-  /* background-color: rgb(228, 228, 228); */
   box-sizing: border-box;
   counter-reset: footnotes;
 }
 
-.part1-block {
-  /* width: 100%; */
+.part0-block {
   position: relative;
   display: block;
   float: left;
   clear: right;
-  /* background-color: coral; */
   margin: 0rem;
   padding: 0rem;
 }
 
-.part1-block:nth-of-type(4) {
-  width: 50%;
+.part0-block:nth-of-type(2) {
+  width: 100%;
+  font-size: 1.35rem;
 }
 
-.part1-block:nth-of-type(5) {
-  width: 50%;
-  height: auto;
-}
-.part1-block:nth-of-type(6) {
+/* 4 /////Like the fall of icarus/// */
+main.part4-container {
+  position: relative;
+  display: block;
+  float: left;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
 }
 
+.part4-block {
+  position: relative;
+  display: block;
+  float: left;
+  clear: right;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.part4-block:nth-of-type(4) {
+  width: 100%;
+  text-indent: 6rem;
+}
+
+.part4-block:nth-of-type(5) {
+  width: 100%;
+  /* margin-left: 1.25rem; */
+  text-indent: 6rem;
+  margin-bottom: 2rem;
+}
+
+/* .part1-block:nth-of-type(5) {
+  width: 50%;
+  height: auto;
+} */
+/* .part1-block:nth-of-type(6) {
+  width: 100%;
+  height: auto;
+} */
+/* 
 main.part2-container {
   position: relative;
   display: block;
   float: left;
   width: 100%;
   height: auto;
-  /* background-color: rgb(228, 228, 228); */
   box-sizing: border-box;
   counter-reset: footnotes;
-}
-.part2-block {
-  /* width: 100%; */
+} */
+/* .part2-block {
   position: relative;
   display: block;
   float: left;
   clear: right;
-  /* background-color: coral; */
   margin: 0rem;
   padding: 0rem;
-}
-.part2-block:nth-of-type(2) {
+} */
+
+/* .part2-block:nth-of-type(2) {
   margin-top: 1rem;
+} */
+
+.cont > h2 {
+  position: sticky;
+  top: 0;
+
+  z-index: 2;
 }
 
 /* UTILITY CLASSES */
@@ -207,7 +257,7 @@ main.part2-container {
 /* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
 /* style this one first and then use the subsequent ones in a cascading way (from general to specific) */
 
-@media (max-width: 779px) {
+@media screen and (max-width: 779px) {
   /* your 'mobile' overriding css properties here */
 
   * {
@@ -221,9 +271,19 @@ main.part2-container {
   }
 
   nav {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: block;
     width: 100%;
+  }
+
+  .cont {
+    position: static;
+    background-color: white;
+  }
+
+  .active > .cont {
+    z-index: 900;
   }
 
   /* utility classes, mobile */
