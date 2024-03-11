@@ -62,7 +62,7 @@ img {
 }
 
 figcaption {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   /* margin-left: 6rem; */
 }
 
@@ -114,7 +114,7 @@ nav > .active > .cont {
 }
 
 nav > div > .cont > article {
-  filter: blur(60px);
+  /* filter: blur(60px); */
 }
 
 .active > .cont > article {
@@ -147,11 +147,9 @@ nav > div > .cont > article {
 }
 
 .poem {
-  padding-left: 0.5rem;
-}
-.poem {
   /* color: blue; */
   color: black;
+  padding-left: 0.5rem;
 }
 
 .poem.colurd {
@@ -159,13 +157,13 @@ nav > div > .cont > article {
 }
 
 ol {
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin-left: 1.2rem;
   /* margin-left: 6rem; */
   list-style: decimal;
 }
 li {
-  padding-left: 18rem;
+  padding-left: 1.2rem;
 }
 h2 {
   /* margin-left: 8rem; */
@@ -176,11 +174,11 @@ h2 {
 }
 
 p {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 figcaption {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   margin-left: 0;
 }
 
@@ -212,7 +210,7 @@ main.part0-container {
 }
 
 .part0-block:nth-of-type(3) {
-  margin-top: 10rem;
+  margin-top: 15rem;
   text-transform: uppercase;
 }
 .part0-block:nth-of-type(4) {
@@ -249,6 +247,7 @@ main.part1-container {
   box-sizing: border-box;
   counter-reset: footnotes;
   font-size: 1.2rem;
+  margin-top: 20rem;
 }
 
 .part1-block {
@@ -261,7 +260,7 @@ main.part1-container {
 }
 
 .part1-block:nth-of-type(1) {
-  margin-top: 13rem;
+  /* margin-top: 20rem; */
 }
 
 /* 2 /////Becoming/// */
@@ -274,6 +273,7 @@ main.part2-container {
   box-sizing: border-box;
   counter-reset: footnotes;
   font-size: 1.2rem;
+  margin-top: 20rem;
 }
 
 .part2-block {
@@ -297,6 +297,9 @@ main.part3-container {
   height: auto;
   box-sizing: border-box;
   counter-reset: footnotes;
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+  margin-top: 20rem;
 }
 
 .part3-block {
@@ -356,6 +359,7 @@ main.part4-container {
   box-sizing: border-box;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  margin-top: 20rem;
 }
 
 .part4-block {
@@ -379,36 +383,71 @@ main.part4-container {
   margin-bottom: 2rem;
 }
 
-/* .part1-block:nth-of-type(5) {
-  width: 50%;
-  height: auto;
-} */
-/* .part1-block:nth-of-type(6) {
-  width: 100%;
-  height: auto;
-} */
-/* 
-main.part2-container {
+/* 5 /////Intertwine/// */
+main.part5-container {
   position: relative;
   display: block;
   float: left;
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  counter-reset: footnotes;
-} */
-/* .part2-block {
+  margin-top: 20rem;
+  font-size: 1.2rem;
+}
+
+.part5-block {
   position: relative;
   display: block;
   float: left;
   clear: right;
   margin: 0rem;
   padding: 0rem;
-} */
+}
 
-/* .part2-block:nth-of-type(2) {
-  margin-top: 1rem;
-} */
+/* 6 /////Into the noise/// */
+main.part6-container {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-top: 20rem;
+  font-size: 1.2rem;
+}
+
+.part6-block {
+  position: relative;
+  display: block;
+  float: left;
+  clear: right;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/* 7 /////Conclusion// */
+main.part7-container {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-top: 20rem;
+  font-size: 1.2rem;
+}
+
+.part7-block {
+  position: relative;
+  display: block;
+  float: left;
+  clear: right;
+  margin: 0rem;
+  padding: 0rem;
+}
+.blibliography {
+  font-size: 1.2;
+}
 
 .cont > h2 {
   position: sticky;
