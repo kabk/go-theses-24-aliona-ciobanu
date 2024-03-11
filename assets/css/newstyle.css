@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Regular";
-  src: url("../fonts/ModernGothic-Regular.otf");
+  src: url("../fonts/ModernGothicTrial-Regular.woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Italic";
-  src: url("../fonts/ModernGothicTrial-ThinItalic.woff");
+  src: url("../fonts/Karrik-Italic.woff");
   font-weight: normal;
   font-style: italic;
   font-display: block;
@@ -24,10 +24,10 @@
   --color-text-link-hover: rgba(0, 0, 255, 0.4);
   /* Font values */
   --font-family: "Regular";
-  --font-weight: bold;
-  --font-size: 1rem;
+  --font-weight: Regular;
+  --font-size: 0.85rem;
   /* Margin value */
-  padding-left: 0.5rem;
+  padding-left: 0.2rem;
   padding-right: 1rem;
 }
 
@@ -43,31 +43,38 @@ body {
   position: relative;
   /* flex-direction: column; */
   background-color: var(--color-background);
-  font: var(--font-size) var(--font-family);
+  /* font: var(--font-size) var(--font-family); */
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--color-text);
   width: 100%;
   height: 100%;
   overflow-y: auto;
   text-align: left;
+  font-size: 1.2rem;
 
   /* background-color: blue; */
   /* position: relative; */
   /* background-image: url('content/memory-1-layers-1.png'); */
   z-index: 0;
 }
+img {
+  margin-top: 0.55rem;
+}
 
 figcaption {
   font-size: 0.75rem;
-  margin-left: 6rem;
+  /* margin-left: 6rem; */
 }
+
 nav {
   width: 100vw;
   height: 100vh;
+  font-size: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   transition: grid-template-columns 0.3s ease;
-  gap: 5px;
+  gap: 0px;
 }
 
 nav > div {
@@ -88,7 +95,7 @@ nav > div {
 }
 
 .active > .cont > h2 {
-  height: 1.25rem;
+  /* height: 1.25rem; */
   background-color: #ffffff;
 }
 
@@ -107,7 +114,7 @@ nav > .active > .cont {
 }
 
 nav > div > .cont > article {
-  filter: blur(14px);
+  filter: blur(60px);
 }
 
 .active > .cont > article {
@@ -118,6 +125,39 @@ nav > div > .cont > article {
   bottom: -1rem;
 }
 
+.title-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0rem;
+  color: #000000;
+}
+
+.cont > .title-grid > .title-grid2 {
+  color: #ffffff;
+}
+
+.active > .cont > .title-grid > .title-grid2 {
+  color: rgb(0, 0, 0);
+  text-transform: none;
+}
+
+.title-grid1 {
+  /* font-weight: 600; */
+  padding-left: 0.5rem;
+}
+
+.poem {
+  padding-left: 0.5rem;
+}
+.poem {
+  /* color: blue; */
+  color: black;
+}
+
+.poem.colurd {
+  color: rgb(255, 0, 43);
+}
+
 ol {
   font-size: 0.75rem;
   margin-left: 1.2rem;
@@ -125,11 +165,12 @@ ol {
   list-style: decimal;
 }
 li {
-  padding-left: 8rem;
+  padding-left: 18rem;
 }
 h2 {
-  margin-left: 6rem;
+  /* margin-left: 8rem; */
   /* text-indent: 6rem; */
+  text-transform: uppercase;
 }
 .intro {
 }
@@ -152,9 +193,13 @@ main.part0-container {
   display: block;
   float: left;
   width: 100%;
+  max-height: 100vh;
   height: auto;
   box-sizing: border-box;
   counter-reset: footnotes;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .part0-block {
@@ -166,10 +211,140 @@ main.part0-container {
   padding: 0rem;
 }
 
-.part0-block:nth-of-type(2) {
-  width: 100%;
-  font-size: 1.35rem;
+.part0-block:nth-of-type(3) {
+  margin-top: 10rem;
+  text-transform: uppercase;
 }
+.part0-block:nth-of-type(4) {
+  width: 100%;
+  margin-bottom: 100%;
+  margin-top: -0.5rem;
+  font-size: 2.3rem;
+  letter-spacing: -0.02rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  /* margin-bottom: 20rem; */
+}
+.part0-block:nth-of-type(1) {
+  width: 50%;
+  /* margin-top: 12rem; */
+
+  /* color: blueviolet; */
+  /* margin-top: -2rem; */
+}
+.part0-block:nth-of-type(2) {
+  width: 50%;
+  /* margin-top: 12rem; */
+
+  /* color: blueviolet; */
+  /* margin-top: -2rem; */
+}
+/* 1 /////INtroduction/// */
+main.part1-container {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  counter-reset: footnotes;
+  font-size: 1.2rem;
+}
+
+.part1-block {
+  position: relative;
+  display: block;
+  float: left;
+  clear: right;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.part1-block:nth-of-type(1) {
+  margin-top: 13rem;
+}
+
+/* 2 /////Becoming/// */
+main.part2-container {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  counter-reset: footnotes;
+  font-size: 1.2rem;
+}
+
+.part2-block {
+  position: relative;
+  display: block;
+  float: left;
+  clear: right;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.part2-block:nth-of-type(1) {
+  margin-top: 14rem;
+}
+/* 3 /////Hyper-invizible/// */
+main.part3-container {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  counter-reset: footnotes;
+}
+
+.part3-block {
+  position: relative;
+  display: block;
+  float: left;
+  clear: right;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.part3-block:nth-of-type(1) {
+  margin-top: 6rem;
+}
+.part3-block:nth-of-type(3) {
+  width: 100%;
+}
+/* .part3-block:nth-of-type(1) {
+  margin-left: 25rem;
+  width: 50%;
+}
+.part3-block:nth-of-type(2) {
+  width: 100%;
+}
+.part3-block:nth-of-type(3) {
+  width: 48%;
+}
+.part3-block:nth-of-type(4) {
+  width: 50%;
+  margin-left: 0.5rem;
+}
+.part3-block:nth-of-type(5) {
+  width: 100%;
+}
+
+.part3-block:nth-of-type(6) {
+  margin-left: 25rem;
+  width: 50%;
+}
+
+.part3-block:nth-of-type(7) {
+  width: 100%;
+}
+
+.part3-block:nth-of-type(8) {
+  margin-left: 25rem;
+  width: 50%;
+} */
 
 /* 4 /////Like the fall of icarus/// */
 main.part4-container {
@@ -179,6 +354,8 @@ main.part4-container {
   width: 100%;
   height: auto;
   box-sizing: border-box;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .part4-block {
@@ -192,13 +369,13 @@ main.part4-container {
 
 .part4-block:nth-of-type(4) {
   width: 100%;
-  text-indent: 6rem;
+  /* text-indent: 6rem; */
 }
 
 .part4-block:nth-of-type(5) {
   width: 100%;
   /* margin-left: 1.25rem; */
-  text-indent: 6rem;
+  /* text-indent: 6rem; */
   margin-bottom: 2rem;
 }
 

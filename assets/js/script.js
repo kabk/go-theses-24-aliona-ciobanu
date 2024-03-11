@@ -1,10 +1,23 @@
 // if you use jQuery, you need to start your .js file with this.
 // otherwise you can delete everything here.
 $(document).ready(function () {
+  // $(".poem").on("mouseenter", (event) => {
+  //   $(".poem").addClass("colurd");
+  // });
+  // $(".poem").on("mouseleave", (event) => {
+  //   $(".poem").removeClass("colurd");
+  // });
+
+  $(".flowers").on("mouseenter", (event) => {
+    $(".poem").addClass("colurd");
+  });
+  $(".flowers").on("mouseleave", (event) => {
+    $(".poem").removeClass("colurd");
+  });
   // functions go here
   $(".intro").on("click", (event) => {
     if (!event.currentTarget.classList.contains("active")) {
-      $("nav").css("gridTemplateColumns", "2fr 1fr 1fr 1fr");
+      $("nav").css("gridTemplateColumns", "2.5fr 1fr 1fr 1fr");
       $("nav div").removeClass("active");
     } else {
       $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1fr");
@@ -14,7 +27,7 @@ $(document).ready(function () {
 
   $(".part1").on("click", (event) => {
     if (!event.currentTarget.classList.contains("active")) {
-      $("nav").css("gridTemplateColumns", "1fr 2fr 1fr 1fr");
+      $("nav").css("gridTemplateColumns", "1fr 1.5fr 1fr 1fr");
       $("nav div").removeClass("active");
     } else {
       $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1fr");
@@ -24,7 +37,7 @@ $(document).ready(function () {
 
   $(".part2").on("click", (event) => {
     if (!event.currentTarget.classList.contains("active")) {
-      $("nav").css("gridTemplateColumns", "1fr 1fr 2fr 1fr");
+      $("nav").css("gridTemplateColumns", "1fr 1fr 1.5fr 1fr");
       $("nav div").removeClass("active");
     } else {
       $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1fr");
@@ -34,7 +47,7 @@ $(document).ready(function () {
 
   $(".part3").on("click", (event) => {
     if (!event.currentTarget.classList.contains("active")) {
-      $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 2fr");
+      $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1.5fr");
       $("nav div").removeClass("active");
     } else {
       $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1fr");
@@ -44,7 +57,7 @@ $(document).ready(function () {
 
   $(".part4").on("click", (event) => {
     if (!event.currentTarget.classList.contains("active")) {
-      $("nav").css("gridTemplateColumns", "2fr 1fr 1fr 1fr");
+      $("nav").css("gridTemplateColumns", "1.5fr 1fr 1fr 1fr");
       $("nav div").removeClass("active");
     } else {
       $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1fr");
@@ -54,7 +67,7 @@ $(document).ready(function () {
 
   $(".part5").on("click", (event) => {
     if (!event.currentTarget.classList.contains("active")) {
-      $("nav").css("gridTemplateColumns", "1fr 2fr 1fr 1fr");
+      $("nav").css("gridTemplateColumns", "1fr 1.5fr 1fr 1fr");
       $("nav div").removeClass("active");
     } else {
       $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1fr");
@@ -64,7 +77,7 @@ $(document).ready(function () {
 
   $(".part6").on("click", (event) => {
     if (!event.currentTarget.classList.contains("active")) {
-      $("nav").css("gridTemplateColumns", "1fr 1fr 2fr 1fr");
+      $("nav").css("gridTemplateColumns", "1fr 1fr 1.5fr 1fr");
       $("nav div").removeClass("active");
     } else {
       $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1fr");
@@ -74,7 +87,7 @@ $(document).ready(function () {
 
   $(".conclusion").on("click", (event) => {
     if (!event.currentTarget.classList.contains("active")) {
-      $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 3fr");
+      $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1.5fr");
       $("nav div").removeClass("active");
     } else {
       $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1fr");
@@ -85,4 +98,9 @@ $(document).ready(function () {
     $(".active").toggleClass("active");
     // $("nav").css("gridTemplateColumns", "1fr 1fr 1fr 1fr");
   });
+
+  // $(".poem").on("click", (event) => {
+  //   $(".poem").removeClass("clicked");
+  //   $(this).addClass("clicked");
+  // });
 });
