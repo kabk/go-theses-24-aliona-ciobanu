@@ -89,6 +89,10 @@ nav > div {
   mask-image: initial;
 }
 
+h2 {
+  transition: 0.3s ease;
+}
+
 .active > .cont {
   background-color: white;
   z-index: 1000;
@@ -98,6 +102,9 @@ nav > div {
 .active > .cont > h2 {
   /* height: 1.25rem; */
   background-color: #ffffff;
+  text-indent: 6rem;
+
+  height: 6rem;
 }
 
 nav > div > .cont {
@@ -142,9 +149,9 @@ nav > div > .cont > article {
   text-transform: none;
 }
 
-.title-grid1 {
+.title-grid2 {
   /* font-weight: 600; */
-  /* padding-left: 0.5rem; */
+  margin-left: -0.3rem;
 }
 
 .poem {
@@ -161,21 +168,26 @@ ol {
   margin-left: 1.7rem;
   /* margin-left: 6rem; */
   list-style: decimal;
+  margin-top: 6rem;
 }
 li {
-  padding-left: 1.2rem;
+  padding-left: 4rem;
 }
 h2 {
   /* margin-left: 8rem; */
-  /* text-indent: 6rem; */
   text-transform: uppercase;
 }
+
+.block-title {
+  width: 100%;
+}
+
 .intro {
 }
 
 p {
-  margin-bottom: 0.5rem;
-  /* text-indent: 6rem; */
+  /* margin-bottom: 0.5rem; */
+  text-indent: 6rem;
 }
 
 figcaption {
@@ -211,13 +223,15 @@ main.part0-container {
 }
 
 .part0-block:nth-of-type(3) {
-  margin-top: 15rem;
+  margin-top: 6rem;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-indent: 6rem;
 }
 .part0-block:nth-of-type(4) {
   width: 100%;
-  margin-bottom: 100%;
-  margin-top: -0.5rem;
+  margin-bottom: 40vh;
+  margin-top: 8rem;
   font-size: 2.3rem;
   letter-spacing: -0.02rem;
   line-height: 2.2rem;
@@ -226,6 +240,7 @@ main.part0-container {
 }
 .part0-block:nth-of-type(1) {
   width: 50%;
+
   /* margin-top: 12rem; */
 
   /* color: blueviolet; */
@@ -235,7 +250,6 @@ main.part0-container {
   width: 50%;
   /* margin-top: 12rem; */
 
-  /* color: blueviolet; */
   /* margin-top: -2rem; */
 }
 /* 1 /////INtroduction/// */
@@ -275,6 +289,7 @@ main.part2-container {
   counter-reset: footnotes;
   font-size: 1.2rem;
   margin-top: 18rem;
+  /* margin-bottom: 6rem; */
 }
 
 .part2-block {
@@ -302,6 +317,7 @@ main.part3-container {
   padding-right: 0.5rem;
   margin-top: 18rem;
   padding-right: 0.5rem;
+  margin-bottom: 6rem;
 }
 
 .part3-block {
@@ -327,9 +343,9 @@ main.part4-container {
   height: auto;
   box-sizing: border-box;
   font-size: 1.2rem;
-  padding-left: 0.5rem;
   padding-right: 0.5rem;
   margin-top: 18rem;
+  margin-bottom: 6rem;
 }
 
 .part4-block {
@@ -364,6 +380,7 @@ main.part5-container {
   font-size: 1.2rem;
   margin-top: 18rem;
   font-size: 1.2rem;
+  margin-bottom: 6rem;
 }
 
 .part5-block {
@@ -386,6 +403,7 @@ main.part6-container {
   font-size: 1.2rem;
   margin-top: 18rem;
   font-size: 1.2rem;
+  margin-bottom: 6rem;
 }
 
 .part6-block {
@@ -408,6 +426,7 @@ main.part7-container {
   font-size: 1.2rem;
   margin-top: 18rem;
   font-size: 1.2rem;
+  margin-bottom: 6rem;
 }
 
 .part7-block {
@@ -420,6 +439,8 @@ main.part7-container {
 }
 
 .part7-block:nth-of-type(2) {
+  margin-top: 6rem;
+  text-indent: 6rem;
   font-size: 1rem;
   text-transform: uppercase;
 }
