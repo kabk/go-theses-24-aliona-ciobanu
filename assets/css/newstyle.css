@@ -178,6 +178,7 @@ ol {
   /* margin-left: 6rem; */
   list-style: decimal;
   margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 li {
   padding-left: 4rem;
@@ -201,7 +202,7 @@ p {
 
 figcaption {
   margin-bottom: 0.5rem;
-  margin-left: 0;
+  margin-right: 0.2rem;
   text-indent: 6rem;
   margin-bottom: 6rem;
 }
@@ -554,11 +555,25 @@ main.part7-container {
     list-style: decimal;
     margin-top: 3rem;
     width: 100%;
+    margin-bottom: 3rem;
   }
   li {
     padding-left: 3rem;
+    padding-right: 1rem;
   }
   .part3-block:nth-of-type(9) {
+    width: 94%;
+  }
+  .part4-block:nth-of-type(4) {
+    width: 94%;
+  }
+  .part5-block:nth-of-type(3) {
+    width: 94%;
+  }
+  .part6-block:nth-of-type(2) {
+    width: 94%;
+  }
+  .part7-block:nth-of-type(3) {
     width: 94%;
   }
 }
