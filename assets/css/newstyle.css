@@ -493,6 +493,7 @@ main.part7-container {
     width: 100%;
     top: 0;
     padding: 0;
+    overflow-y: none;
   }
 
   p {
@@ -560,6 +561,9 @@ main.part7-container {
   li {
     padding-left: 3rem;
     padding-right: 1rem;
+  }
+  .part2-block:nth-of-type(2) {
+    width: 94%;
   }
   .part3-block:nth-of-type(9) {
     width: 94%;
