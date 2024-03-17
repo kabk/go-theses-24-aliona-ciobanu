@@ -315,8 +315,8 @@ main.part2-container {
   padding: 0rem;
 }
 
-.part2-block:nth-of-type(1) {
-  /* margin-top: 14rem; */
+.part2-block:nth-of-type(2) {
+  width: 97%;
 }
 /* 3 /////Hyper-invizible/// */
 main.part3-container {
@@ -490,15 +490,17 @@ main.part7-container {
   * {
     color: rgb(0, 0, 0) !important;
     width: 100%;
+    top: 0;
+    padding: 0;
   }
 
   p {
-    display: flex;
     flex-wrap: wrap;
+    padding-right: 1.2rem;
   }
 
   nav {
-    /* display: flex;
+    /* display: flex; 
     flex-wrap: wrap; */
     display: block;
     position: sticky;
@@ -507,10 +509,10 @@ main.part7-container {
     width: 100%;
   }
 
-  .cont {
+  /* .cont {
     position: static;
     background-color: white;
-  }
+  } */
 
   .active > .cont {
     z-index: 900;
@@ -524,6 +526,40 @@ main.part7-container {
 
   .mobile-only {
     display: block;
+  }
+  .active {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+  }
+  .second > .cont {
+    /* top: 0; */
+    bottom: -77.5rem;
+  }
+  li {
+    flex-wrap: wrap;
+  }
+  figcaption {
+    text-indent: 0;
+    margin-bottom: 3rem;
+  }
+  img {
+    padding-right: 1.2rem;
+  }
+  ol {
+    font-size: 1rem;
+    margin-left: 1.7rem;
+    /* margin-left: 6rem; */
+    list-style: decimal;
+    margin-top: 3rem;
+    width: 100%;
+  }
+  li {
+    padding-left: 3rem;
+  }
+  .part3-block:nth-of-type(9) {
+    width: 94%;
   }
 }
 
