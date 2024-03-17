@@ -544,7 +544,8 @@ main.part7-container {
   }
   figcaption {
     text-indent: 0;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+    color: rgb(183, 183, 183);
   }
   img {
     padding-right: 1.2rem;
@@ -556,7 +557,7 @@ main.part7-container {
     list-style: decimal;
     margin-top: 3rem;
     width: 100%;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
   }
   li {
     padding-left: 3rem;
@@ -579,6 +580,24 @@ main.part7-container {
   }
   .part7-block:nth-of-type(3) {
     width: 94%;
+  }
+  main.part2-container {
+    margin-bottom: 3rem;
+  }
+  main.part3-container {
+    margin-bottom: 3rem;
+  }
+  main.part4-container {
+    margin-bottom: 3rem;
+  }
+  main.part5-container {
+    margin-bottom: 3rem;
+  }
+  main.part6-container {
+    margin-bottom: 3rem;
+  }
+  main.part7-container {
+    margin-bottom: 3rem;
   }
 }
 
