@@ -493,7 +493,11 @@ main.part7-container {
     width: 100%;
     top: 0;
     padding: 0;
+    padding-right: 0;
     overflow-y: none;
+  }
+  style {
+    padding: 0;
   }
 
   p {
@@ -511,10 +515,11 @@ main.part7-container {
     width: 100%;
   }
 
-  /* .cont {
-    position: static;
-    background-color: white;
-  } */
+  .cont {
+    /* position: static;
+    background-color: white; */
+    padding: 0;
+  }
 
   .active > .cont {
     z-index: 900;
@@ -563,6 +568,7 @@ main.part7-container {
     padding-left: 3rem;
     padding-right: 1rem;
   }
+
   .part2-block:nth-of-type(2) {
     width: 94%;
   }
